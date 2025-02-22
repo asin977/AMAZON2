@@ -75,12 +75,9 @@ document.querySelectorAll('.js-add-to-cart')
    
   .forEach((button)=>{
         button.addEventListener('click',()=>{
-           const productId=button.dataset.producId;
+           const productId=button.dataset.productId;
            updateCartQuantity();
            addToCart(productId);
-           
-            
-            
           });
         });
  
