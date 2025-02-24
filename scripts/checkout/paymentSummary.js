@@ -58,3 +58,5 @@ const paymentSummaryHTML =`
 document.querySelector('.js-payment-summary')
     .innerHTML = paymentSummaryHTML;
 }
+
+// make it interactive - CONTROLLER
