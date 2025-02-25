@@ -1,6 +1,7 @@
 function Cart(localStorageKey) {
     return {
         cartItems: [],
+        
 
         loadFromStorage() {
             // Load from storage or set default values
@@ -54,7 +55,7 @@ function Cart(localStorageKey) {
     };
 }
 
-const cart = Cart('cart-oop');
+const cart = Cart('cart-oop');   // called as instance of a class. //
 const businessCart = Cart('cart-business');  
 const extraCart = Cart('extra-cart');
 
@@ -65,3 +66,10 @@ businessCart.loadFromStorage();
 console.log(businessCart);
 console.log(cart);
 console.log(extraCart)
+console.log(Cart instanceof Cart)
+console.log(cart-business instanceof Cart);
+
+
+
+
+
