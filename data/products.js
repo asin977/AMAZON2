@@ -754,3 +754,12 @@ export const products = [
 //2)Inside a function this=undefined.
 //but we can change it.
 //3)Arrow functions,do not change the value of 'this'.
+
+// in this lesson 
+// OOp =organize our code into objects.
+// uses a function to generate objects.
+//classes.
+//private properties and methods
+//inheritence
+//method overiding & polymorphism
+// more details about "this".
