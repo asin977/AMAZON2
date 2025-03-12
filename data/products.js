@@ -38,6 +38,26 @@ class Product {
     return ' ';
   }
 }
+// console.log(this)
+
+// const object2={
+//   a:2,
+//   b:this.a
+// }
+
+function logThis() {
+  console.log(this);
+
+}
+logThis()
+logThis.call('hello');
+
+const object3={
+  method:() =>{
+    console.log(this)
+  }
+}
+object3.method() // this will gives the value outside the value function.
 
 class Clothing extends Product {  // inheritence method is used here.
   sizeChartLink;
@@ -55,7 +75,10 @@ class Clothing extends Product {  // inheritence method is used here.
     `;
   }
 }
-
+// const date= new Date();
+// console.log(date);
+// console.log(date.toLocaleDateString());
+// console.log(date.toLocaleTimeString());
 
 export const products = [
   {
@@ -723,3 +746,11 @@ export const products = [
   return new Product(productDetails);
    
 });
+
+
+
+/// POINTS TO REMEMBER 
+//1) Inside a method "this" points to the outer object.
+//2)Inside a function this=undefined.
+//but we can change it.
+//3)Arrow functions,do not change the value of 'this'.
