@@ -1,3 +1,5 @@
+// OOP is another way of writing codes and programming.ie organinizing our code into objects.
+
 function Cart(localStorageKey) {
     return {
         cartItems: [],

@@ -37,3 +37,4 @@ describe('test suite : renderOrderSummary',()=>{
     });
 });
 
+// inheritence = lets us resuse the code between classes.
